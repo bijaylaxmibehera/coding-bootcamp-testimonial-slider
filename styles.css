@@ -12,6 +12,10 @@
 body {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
+    background-image: url(./images/pattern-curve.svg);
+	background-position: left bottom;
+	background-size: top;
+	background-repeat: no-repeat;
 }
 .container {
 	min-height: 100vh;
@@ -20,10 +24,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
-	background-image: url(./images/pattern-curve.svg);
-	background-position: center bottom;
-	background-size: contain;
-	background-repeat: no-repeat;
 }
 .slider {
 	display: block;
@@ -45,11 +45,12 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	height: 100%;
-	padding: 40px;
+	padding: 50px;
 	background-image: url(./images/pattern-bg.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
+    margin-bottom: 10px;
 }
 .slide-text {
 	padding-top: 30px;
@@ -66,22 +67,23 @@ blockquote {
 	font-weight: 300;
 	font-size: .7rem;
 	line-height: 1rem;
-	color: hsl(240, 38%, 20%);
+	color: var(--dark-blue);
 }
 .author {
 	margin-top: 20px;
-	color: hsl(240, 38%, 20%);
+	color: var(--dark-blue);
 	font-size: .5rem;
 	font-weight: 700;
 }
 .author span {
-	color: hsl(240, 18%, 77%);
+	color: var(--grayish-blue);
 	font-weight: 500;
 	display: block;
 }
 .slide-img img {
-	height: 100%;
+	height: auto;
 	width: 300px;
+    box-shadow: 0px 2px 15px 0px hsla(240, 68%, 54%, 0.52);
 }
 .prev,
 .next {
@@ -140,6 +142,13 @@ blockquote {
 		background-size: 100px;
 		align-items: flex-start;
 	}
+    blockquote{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .author{
+        font-size: .9rem;
+    }
 	.slide-img {
 		margin-left: -100px;
 		z-index: -1;
